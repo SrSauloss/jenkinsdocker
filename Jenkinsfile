@@ -9,9 +9,9 @@ pipeline {
     options {
         disableConcurrentBuilds() // Impede builds simultâneos
     }
-    
+
     triggers {
-        cron('H/5 * * * *') // Roda a cada 5 minutos
+        cron('H/2 * * * *') // Roda a cada 2 minutos
     }
 
     stages {
