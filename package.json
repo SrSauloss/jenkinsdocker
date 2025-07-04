@@ -1,0 +1,16 @@
+{
+  "name": "temperature-converter-ts",
+  "version": "1.0.0",  
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.0.4",
+    "@types/jest": "^30.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.4.0"
+  }
+}
