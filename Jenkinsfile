@@ -4,10 +4,10 @@ pipeline {
     /*
     Comando comentado para agendar a execução do pipeline a cada 2 minutos.
     Descomente para ativar o agendamento.
+    */
     triggers {
         cron('H/2 * * * *') // Roda a cada 2 minutos
     }
-    */
 
     stages {
         stage('Build in Docker') {
