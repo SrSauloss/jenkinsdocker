@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     /*
-    Comando comentado para agendar a execução do pipeline a cada 2 minutos.
+    Comando comentado para agendar a execução do pipeline a cada 5 minutos.
     Descomente para ativar o agendamento.
     */
     triggers {
-        cron('H/2 * * * *') // Roda a cada 2 minutos
+        cron('H/5 * * * *') // Roda a cada 5 minutos
     }
 
     stages {
