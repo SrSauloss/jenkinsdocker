@@ -5,6 +5,11 @@ pipeline {
     Comando comentado para agendar a execução do pipeline a cada 5 minutos.
     Descomente para ativar o agendamento.
     */
+
+    options {
+        disableConcurrentBuilds() // Impede builds simultâneos
+    }
+    
     triggers {
         cron('H/5 * * * *') // Roda a cada 5 minutos
     }
