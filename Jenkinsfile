@@ -4,8 +4,7 @@ pipeline {
     /*
     Comando comentado para agendar a execução do pipeline a cada 5 minutos.
     Descomente para ativar o agendamento.
-    */
-
+    
     options {
         disableConcurrentBuilds() // Impede builds simultâneos
     }
@@ -13,6 +12,8 @@ pipeline {
     triggers {
         cron('H/2 * * * *') // Roda a cada 2 minutos
     }
+    */
+
 
     stages {
         stage('Build in Docker') {
